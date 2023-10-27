@@ -1,0 +1,15 @@
+package AppAula66;
+
+import java.util.Locale;
+
+import Aula66.Product;
+public class App {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		
+		Product product = new Product();
+
+	}
+
+}

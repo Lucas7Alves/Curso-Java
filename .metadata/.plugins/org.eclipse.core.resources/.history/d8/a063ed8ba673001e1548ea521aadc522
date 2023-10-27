@@ -1,0 +1,34 @@
+package AppAula66;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import Aula66.Product;
+public class App {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		Product product = new Product();
+		
+		System.out.println("** Enter products  data: **");
+		
+		System.out.print("\nName....: ");
+		product.name = sc.nextLine();
+		
+		System.out.print("\nPrice...:");
+		product.price = sc.nextDouble();
+		
+		System.out.print("\nQuantity:");
+		product.quantity = sc.nextInt();
+		
+		System.out.printf("Product data: %s, $ %.2f, %d units, Total: %.2f", 
+						   product.name, product.price, product.quantity, product.totalVulenStock());
+	
+		System.out.println("Add product: ");
+		product.addProducts(sc.nextInt());
+		System.out.printf("Update: Product data: %s, $ %.2f, %d units, Total: %.2f",
+						   product.name, product.price, product.quantity, product.totalVulenStock());
+	}
+
+}

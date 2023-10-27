@@ -1,4 +1,0 @@
-INDEX VERSION 1.134+C:\Users\lucas\Desktop\Estudos da Udemy\.metadata\.plugins\org.eclipse.jdt.core
-1865797976.index
-1280207706.index
-2793921957.index

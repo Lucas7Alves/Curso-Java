@@ -27,7 +27,7 @@ public class App {
             System.out.println("Avarege price: " + String.format("%.2f", media));
             Comparator<String> comp = (s1, s2) -> s1.toUpperCase().compareTo(s2.toUpperCase());
             List<String> names = list.stream()
-            .filter(x -> x.getPrice() < media)
+            .filter(x -> x.getPrice() > media)
             .map(x -> x.getName()).sorted(comp.reversed())
             .collect(Collectors.toList());
 
